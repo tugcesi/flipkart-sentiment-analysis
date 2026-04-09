@@ -1,6 +1,6 @@
 # Flipkart Sentiment Analysis
 
-Bu proje, Flipkart ürün yorumlarını analiz ederek otomatik olarak olumlu/olumsuz/diğer duygu sınıflandırması yapmayı amaçlamaktadır. Projede veri ön işleme, makine öğrenmesi ve/veya derin öğrenme teknikleri kullanılmıştır.
+Bu proje, Flipkart ürün yorumlarının analiz edilerek otomatik olarak olumlu/olumsuz duygu (sentiment) sınıflandırması yapılmasını amaçlar. Projede ön işleme ve makine öğrenmesi teknikleri kullanılmaktadır.
 
 ## Kullanım
 
@@ -8,17 +8,19 @@ Bu proje, Flipkart ürün yorumlarını analiz ederek otomatik olarak olumlu/olu
     ```
     pip install -r requirements.txt
     ```
-2. Ana Jupyter defterini veya script dosyasını çalıştırarak modeli eğitin ve test edin.
-3. Dilerseniz streamlit_app.py dosyasındaki web arayüzü ile hızlı demo yapabilirsiniz.
+2. Ana Jupyter defterini (`FlipkartReviewsSentimentAnalysis.ipynb`) çalıştırarak modeli eğitin ve değerlendirin.
+3. Alternatif olarak, `app.py` dosyası ile Python üzerinden temel bir uygulama başlatabilirsiniz.
 
 ## Dosya Açıklamaları
 
-- `data/`                : Ham ve işlenmiş veri dosyaları
-- `notebooks/`           : Çalışma defterleri
-- `models/`              : Eğitilmiş model dosyaları
-- `streamlit_app.py`     : (isteğe bağlı) Streamlit demo arayüzü
-- `utils.py`             : Yardımcı fonksiyonlar
+- `FlipkartReviewsSentimentAnalysis.ipynb` : Tüm veri hazırlama, modelleme ve test süreçlerini içeren Jupyter defteri
+- `app.py` : Python tabanlı örnek uygulama arayüzü
+- `cloud.png` : Projeyle ilişkili görsel veya WordCloud çıktısı
+- `sentiment_model.joblib` : Kaydedilmiş model dosyası
+- `vectorizer.joblib` : Kaydedilmiş vektörleştirici/model girdisi
+- `requirements.txt` : Kullanılan temel Python paketleri listesi
+- `.gitignore` : Versiyon kontrolde hariç tutulan dosyalar
 
-## Not
+## Lisans
 
-Proje eğitsel veya analiz amaçlıdır. Her türlü geri bildiriminizi beklerim!
+MIT Lisansı
